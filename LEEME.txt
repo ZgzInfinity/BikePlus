@@ -1,0 +1,39 @@
+----------------------------------------------------
+--- PROYECTO BIZIS ZARAGOZA ------------------------
+--- Autor: ZgzInfinity -----------------------------
+--- Fecha: 10-2-1019 -------------------------------
+----------------------------------------------------
+
+Este proyecto permite gestionar ficheros que almacenan información sobre los sistemas de bizis de Zaragoza.
+El módulo principal denominado "trabajo" consta de tres submódulos denominados "Estaciones", "Usos" y "
+"Usuarios". 
+
+Datos descargados del portal de datos abiertos del Ayuntamiento de Zaragoza
+el 1 de diciembre de 2017 y en diciembre de 2018.
+
+https://www.zaragoza.es/sede/servicio/catalogo/70#CSV
+
+El fichero «usos-16.csv» está comprimido en formato ZIP en el fichero
+«usos-16.zip» debido a su tamaño. Su nombre original en el portal de datos
+abiertos del Ayuntamiento de Zaragoza es «Usos Oct16-Mar17 1.csv». Su contenido ha
+sido modificado para eliminar una línea en la que faltaba el identificador del
+usuario y los datos de recogida.
+	
+El fichero «usos-17.csv» está comprimido en formato ZIP en el fichero
+«usos-17.zip» debido a su tamaño. Su nombre original en el portal de datos
+abiertos del Ayuntamiento de Zaragoza es «UsosMar17_Ago17.csv».
+
+El fichero «usuarios-16.csv» tiene por nombre original en el portal de datos
+abiertos del Ayuntamiento de Zaragoza «Usuarios Oct16-Mar17.csv».
+
+El fichero «usuarios-17.csv» tiene por nombre original en el portal de datos
+abiertos del Ayuntamiento de Zaragoza «Usuarios Mar17_Ago17».
+
+Los ficheros «estaciones-16.csv» y «estaciones-17.csv» se han obtenido realizando la siguiente consulta al
+portal: https://www.zaragoza.es/sede/servicio/urbanismo-infraestructuras/estacion-bicicleta.csv?rows=1000
+
+Para poder ejecutar el programa se recomienda crear un workspace en entornos de lenguaje como dev C++, Codelite 
+y Codeblocks. En dicho workspace se recomienda importar los cuatro proyectos y probarlos.
+
+Los proyectos de "usos", "usuarios" y "estaciones" tienen ficheros de prueba para cada módulo. El proyecto "trabajo" tiene un fichero de prueba que usa todos los módulos anteriores.
+
