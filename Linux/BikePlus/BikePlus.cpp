@@ -13,7 +13,7 @@
 #include <cctype>
 #include "../Uso/Bizi-uso.h"
 #include "../Usuario/Bizi-usuario.h"
-#include "../Estacion/Bizi-estacion.h"
+#include "../Estacion/Bizi-estacion.h"   
 
 using namespace std;
 
@@ -21,6 +21,19 @@ const int MAX_LONG_NOMBRE_FICHERO = 50;
 const int MAX_LONG_LINEA = 128;
 const int MAX_USUARIOS = 30000;
 const int ERROR_EN_BUSQUEDA = -1;
+
+
+/*
+ * Pre: <<orden>> es una secuencia de caracteres que constituye una orden valida del programa
+ * Post: Ha insertado en cada componente de la cadena <<orden>> el caracter '\0' para vaciarla
+ */
+void limpiarOrden(char orden[]){
+	int tamanyo = strlen(orden);
+	for (int i = 0; i < tamanyo; i++){
+		orden[i] = '\0';
+	}
+}
+
 
 /*
  * Pre: Muestra por pantalla un menú informativo al usuario con el 
@@ -34,15 +47,56 @@ const int ERROR_EN_BUSQUEDA = -1;
  * Post: El usuario ha introducido por teclado una de las dos opciones disponibles,
  *       generandose los ficheros correspondientes a esa elección
  */ 
-void pedirDatosUsuario(char orden[]){
-	cout << endl;
-	cout << " Eleccion de ficheros de usos y usuarios. Opciones disponibles: " << endl;
-	cout << " 16: octubre 2016 a marzo 2017 " << endl;
-	cout << " 17: marzo 2017 a agosto 2017 " << endl;
-	
-	// pide al usuario la opción con la que determinar con qué ficheros trabajar
-	cout << " Introduzca una opcion " << flush;
-	cin.getline(orden, MAX_LONG_LINEA, '\n');
+void pedirDatosUsuario(char orden[], char ficheroFinUsuarios[], char ficheroFinUsos[], char ficheroFinEstaciones[],
+							int& usosNormales, int&usosCirculares, int& numUsuarios, Usuario usuarios[MAX_USUARIOS]){
+								
+	// fichero de usos del sistema bizi de Zaragoza
+	char ficheroUsos[MAX_LONG_NOMBRE_FICHERO] = "../Datos/usos-";
+	// fichero de usuarios del sistema bizi de Zaragoza 
+	char ficheroUsuarios[MAX_LONG_NOMBRE_FICHERO] = "../Datos/usuarios-";
+	// fichero de estaciones del sistema bizi de Zaragoza
+	char ficheroEstaciones[MAX_LONG_NOMBRE_FICHERO] = "../Datos/estaciones-";
+	// Control de ficheros abiertos disponibles
+	bool ok1, ok2;
+	do {
+		cout << endl;
+		cout << " Eleccion de ficheros de usos y usuarios. Opciones disponibles: " << endl;
+		cout << " 16: octubre 2016 a marzo 2017 " << endl;
+		cout << " 17: marzo 2017 a agosto 2017 " << endl;
+		
+		// pide al usuario la opción con la que determinar con qué ficheros trabajar
+		cout << " Introduzca una opcion " << flush;
+		cin.getline(orden, MAX_LONG_LINEA, '\n');
+		
+		// Obtención completa de la ruta del fichero de usos 
+		strcat(ficheroUsos, orden);
+		strcat(ficheroUsos, ".csv");
+			
+		// Obtención completa de la ruta del fichero de usuarios
+		strcat(ficheroUsuarios, orden);
+		strcat(ficheroUsuarios, ".csv");
+		
+		// Obtención completa de la ruta del fichero de estaciones
+		strcat(ficheroEstaciones, orden);
+		strcat(ficheroEstaciones, ".csv");
+		
+		// conteo del número de usos normales y circulares
+		ok1 = contarUsos(ficheroUsos, usosNormales, usosCirculares);
+		
+		// lectura de usuarios del sistema bizi de Zaragoza
+		ok2 = leerUsuarios(ficheroUsuarios, usuarios, numUsuarios);
+		
+		if (!ok1 || !ok2){
+			// Algun fichero ha dado problemas y se deben reasignarse
+			limpiarOrden(ficheroUsuarios);
+			limpiarOrden(ficheroUsos);
+			
+			// Reasignacion del contenido de los ficheros
+			strcpy(ficheroUsos,"../Datos/usos-");
+			strcpy(ficheroUsuarios, "../Datos/usuarios-");
+		}
+	  // Repetir mientras que alguno de los ficheros no sea correcto
+	} while (!ok1 || !ok2);
 }
 
 /*
@@ -89,17 +143,6 @@ void pedirOrden(char orden[]){
 	cin.getline(orden, MAX_LONG_LINEA, '\n');
 }
 
-
-/*
- * Pre: <<orden>> es una secuencia de caracteres que constituye una orden valida del programa
- * Post: Ha insertado en cada componente de la cadena <<orden>> el caracter '\0' para vaciarla
- */
-void limpiarOrden(char orden[]){
-	int tamanyo = strlen(orden);
-	for (int i = 0; i < tamanyo; i++){
-		orden[i] = '\0';
-	}
-}
 
 
 /*
@@ -316,46 +359,23 @@ int main(){
 	char ordenMod[MAX_LONG_LINEA];
 	// parametro para poder ejecutar la orden pedida
 	char valor[MAX_LONG_LINEA];
-	// fichero de usos del sistema bizi de Zaragoza
-	char ficheroUsos[MAX_LONG_NOMBRE_FICHERO] = "../Datos/usos-";
-	// fichero de usuarios del sistema bizi de Zaragoza 
-	char ficheroUsuarios[MAX_LONG_NOMBRE_FICHERO] = "../Datos/usuarios-";
-	// fichero de estaciones del sistema bizi de Zaragoza
-	char ficheroEstaciones[MAX_LONG_NOMBRE_FICHERO] = "../Datos/estaciones-";
-	
-	// solicitud al usuario de la opción para trabajar con los ficheros
-	// del sistema de bizis de Zaragoza
-	pedirDatosUsuario(orden);
-	
-	// Obtención completa de la ruta del fichero de usos 
-	strcat(ficheroUsos, orden);
-	strcat(ficheroUsos, ".csv");
-	
-	// Obtención completa de la ruta del fichero de usuarios
-	strcat(ficheroUsuarios, orden);
-	strcat(ficheroUsuarios, ".csv");
-	
-	// Obtención completa de la ruta del fichero de estaciones
-	strcat(ficheroEstaciones, orden);
-	strcat(ficheroEstaciones, ".csv");
-	
+	// ficheros de usuarios, usos y estaciones finales
+	char ficheroFinUsuarios[MAX_LONG_NOMBRE_FICHERO];
+	char ficheroFinUsos[MAX_LONG_NOMBRE_FICHERO];
+	char ficheroFinEstaciones[MAX_LONG_NOMBRE_FICHERO];
 	// contadores de usos normales, circulares y totaeles del sistema 
 	// de Bizis de Zaragoza
 	int usosNormales = 0, usosCirculares = 0, numUsuarios;
-	
-	// conteo del número de usos normales y circulares
-	contarUsos(ficheroUsos, usosNormales, usosCirculares);
-	
 	// vector de usuarios
 	Usuario usuarios[MAX_USUARIOS];
-	
-	// lectura de usuarios del sistema bizi de Zaragoza
-	leerUsuarios(ficheroUsuarios, usuarios, numUsuarios);
+	// solicitud al usuario de la opción para trabajar con los ficheros
+	// del sistema de bizis de Zaragoza
+	pedirDatosUsuario(orden, ficheroFinUsuarios, ficheroFinUsos, ficheroFinEstaciones, usosNormales, usosCirculares, numUsuarios, usuarios);
 	
 	// Muestra por pantalla el número total del usos del sistema bizi de Zaragoza y
 	// cuántos usuarios lo han empleado
-	cout << " El fichero " << ficheroUsos << " existe y tiene " << usosNormales + usosCirculares << " utilizaciones " << endl;
-	cout << " El fichero " << ficheroUsuarios << " existe y tiene " << numUsuarios << " usuarios " << endl;
+	cout << " El fichero " << ficheroFinUsos << " existe y tiene " << usosNormales + usosCirculares << " utilizaciones " << endl;
+	cout << " El fichero " << ficheroFinUsuarios << " existe y tiene " << numUsuarios << " usuarios " << endl;
 	
 	// muestra menú con las posibles acciones ha realizar en base a los ficheros
 	// introducidos por el usuario
@@ -383,29 +403,34 @@ int main(){
 	// transformar a mayusculas
 	aMayusculas(ordenMod);
 	
+	// control de orden ayuda
+	bool esAyuda = false;
+	
 	while (strcmp(ordenMod, "FIN") != 0){
 		// mientras que la orden sea distinta de "fin"
 		if (strcmp(ordenMod, "AYUDA") == 0){
 			// la orden es "AYUDA"
 			// se muestra de nuevo el menú de opciones
 			mostrarOpciones();
+			// es la orden ayuda 
+			esAyuda = true;
 		}
 		else if (strcmp(ordenMod, "FICHERO") == 0 ) {
 			// la orden es "FICHERO"
 			// solicita de nuevo los ficheros con los que trabajar
-			pedirDatosUsuario(ordenMod);
+			pedirDatosUsuario(ordenMod, ficheroFinUsuarios, ficheroFinUsos, ficheroFinEstaciones, usosNormales, usosCirculares, numUsuarios, usuarios);
 		}
 		else if (strcmp(ordenMod, "INFORME") == 0){
 			// la orden es "INFORME"
 			// genera un fichero informe de las estaciones y usos del sistema bizi de Zaragoza
-			procesarUnInforme(ficheroUsos, ficheroEstaciones, valor);
+			procesarUnInforme(ficheroFinUsos, ficheroFinEstaciones, valor);
 		}
 		else if (strcmp(ordenMod, "USUARIO") == 0){
 			// la orden es "USUARIO"
 			// informa de cuántas veces el usuario introducido como parámetro ha sido el sistema bizi
 			// de Zaragoza
 			int codigoUsuario = atoi(valor);
-			int numVeces = contarUsosUsuario(ficheroUsos, codigoUsuario);
+			int numVeces = contarUsosUsuario(ficheroFinUsos, codigoUsuario);
 			
 			cout << " El/la usuario " << codigoUsuario << " ha realizado " << numVeces << " viajes " << endl;
 		}
@@ -415,18 +440,18 @@ int main(){
 			int usosHombres = 0, usosMujeres = 0;
 			
 			// lectura de usuarios del sistema bizi de Zaragoza
-			leerUsuarios(ficheroUsuarios, usuarios, numUsuarios);
+			leerUsuarios(ficheroFinUsuarios, usuarios, numUsuarios);
 			
 			// vector de usuarios hombres
-			Usuario hombres [numUsuarios];
+			Usuario hombres[numUsuarios];
 			// vector de usuarios mujeres
-			Usuario mujeres [numUsuarios];
+			Usuario mujeres[numUsuarios];
 			
 			// clasifica los usuarios que han usado el sistema bizi de Zaragoza por sexo
 			clasificarUsuariosPorSexo(usuarios, hombres, mujeres, numUsuarios, numHombres, numMujeres);
 			
 			// cuenta cuántos usos han realizado los hombres y las mujeres del sistema bizi de Zaragoza
-			contarUsosPorSexo(ficheroUsos, hombres, mujeres, numHombres, numMujeres, usosHombres, usosMujeres);
+			contarUsosPorSexo(ficheroFinUsos, hombres, mujeres, numHombres, numMujeres, usosHombres, usosMujeres);
 			
 			cout << " Usos de bizi por hombres: " << usosHombres << endl;
 			cout << " Usos de bizi por mujeres: " << usosMujeres << endl;
@@ -438,8 +463,15 @@ int main(){
 			cerr << " Vuelva a intentarlo " << endl;
 		}
 		// la orden es distinta de "FIN"
-		// muestra de nuevo el menú de opciones
-		mostrarOpciones();
+		// muestra de nuevo el menú de opciones y no ha sido orden ayuda
+		if (!esAyuda){
+			// No es orden ayuda y se muestra de nuevo el menu
+			mostrarOpciones();
+		}
+		else {
+			// Es orden ayuda y no se muestra para no repetir
+			esAyuda = false;
+		}
 		
 		// Limpiar la orden anterior
 		limpiarOrden(orden);
