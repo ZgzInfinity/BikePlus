@@ -29,7 +29,7 @@ que el usuario elija una opción que esté disponible. Es importante tener en cu
 programa para poder ser utilizados deben alojarse en el directorio "Datos". Seguidamente se muestra una captura de la 
 retroalimentación del sistema cuando el usuario introduce un fichero disponible y otra cuando no, respectivamente.
 
-![alt text](https://i.ibb.co/pvHvL73/0.png) 
+![alt text](https://i.ibb.co/DGMCcBr/0.png) 
 
 
 ![alt text](https://i.ibb.co/DGMCcBr/0.png)
