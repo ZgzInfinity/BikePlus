@@ -16,22 +16,21 @@ la ejecutará, hasta que el usuario decida dar por concluida la ejecucióndel pr
 
 ### 2.1 - Inicio del programa
 
-Cuando el programa comienza su ejecución, solicita al usuario que indique por tclado el conjunto de datos con el que va a trabajar
-inicialmente. Dichos ficheros de texto con los datos han sido obtenidos del portal de datos abiertos del ayuntamiento de Zaragoza.
-El programa mostrará cuales son las opciones de ficheros disponibles y el usuario deberá seleccionar la que él quiera. 
-A continuación, se muestra una captura de dicha interacción.
-
-![alt text](https://i.ibb.co/8mBf6Rx/bizi-LOGO.jpg) 
+Cuando el programa comienza su ejecución, solicita al usuario que indique por tclado el conjunto de datos con el que va a 
+trabajar inicialmente. Dichos ficheros de texto con los datos han sido obtenidos del portal de datos abiertos del ayuntamiento 
+de Zaragoza. El programa mostrará cuales son las opciones de ficheros disponibles y el usuario deberá seleccionar la que él 
+quiera. 
 
 El programa ofrecerá las opciones disponibles y solicitará una. Cuando el usuario introduzca su respuesta, el programa comprueba 
 si existe el fichero correspondiente de usos e informa del número de usos que contiene. Seguidamente, comprueba que existe el 
 de usuarios e informa de cuántos usuarios contiene. Si el usuario introduce una opción para la que no hay ficheros, notifica
-de que el fichero correspondiente no existe, y vuelve a informar sobre las opciones disponibles y a solicitar una nueva hasta que
-el usuario elija una opción que esté disponible. Es importante tener en cuenta que los ficheros con los que trabaja el programa
-para poder ser utilizados deben alojarse en el directorio "Datos". Seguidamente se muestra una captura de la retroalimentación 
-del sistema.
+de que el fichero correspondiente no existe, y vuelve a informar sobre las opciones disponibles y a solicitar una nueva hasta 
+que el usuario elija una opción que esté disponible. Es importante tener en cuenta que los ficheros con los que trabaja el 
+programa para poder ser utilizados deben alojarse en el directorio "Datos". Seguidamente se muestra una captura de la 
+retroalimentación del sistema
 
-IMAGEN
+![alt text](![alt text](https://i.ibb.co/pvHvL73/0.png) 
+
 
 ### 2.2 - Menú de opciones disponibles
 
