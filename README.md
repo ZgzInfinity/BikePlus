@@ -92,12 +92,12 @@ sistema los resultados al usuario.
 
 ![alt text](https://i.ibb.co/mNyJw4W/2.png)
 
-### 2.9. - Orden <FIN>
+### 2.9. - Orden FIN
 
 Si el usuario selecciona esta opción, el programa termina (y, por lo tanto, no vuelve a solicitarmás órdenes). A continuación,
 se muestra una imagen de la salida del sistema cuando el usaurio teclea una orden incorrecta.
 
-IMAGEN
+![alt text](https://i.ibb.co/N9YgyPM/0.png)
 
 
 ## 3. - Control de órdenes no válidas
@@ -105,7 +105,7 @@ IMAGEN
 Cuando el usuario seleccione una órden no disponible, deberá informar sobre el error y solicitar unanueva orden. La imagen 
 siguiente muestra la retralimentación del programa.
 
-IMAGEN
+![alt text](https://i.ibb.co/zFQZ59q/0.png)
 
 
 ## 4 - Ficheros del proyecto
@@ -133,7 +133,7 @@ usuario, el código de la estación de laque se retiró, el día y la hora en la
 estación en la que sedevolvió. En este proyecto no se han empleado los datos relativos a los días y horas de retirada y 
 devolución de las bicicletas. La siguiente captura evidencia la estructura sintáctica del fichero.
 
-IMAGEN
+![alt text](https://i.ibb.co/x7mCfKR/5.png)
 
 ### 4.3 - Fichero de estaciones
 
