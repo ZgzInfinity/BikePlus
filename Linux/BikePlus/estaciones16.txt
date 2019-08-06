@@ -1,0 +1,132 @@
+           Puesto    Usos  id Nombre
+           ------ ------- --- --------------------------------------- 
+                1   47064  16 Plaza España
+                2   42306  67 Avda. G. Gómez de Avellaneda - C/ Clara Campoamor
+                3   40251  47 Plaza San Francisco - Universidad
+                4   39173  34 Plaza Magdalena
+                5   36264  10 Pº Echegaray y Caballero - Puente de Santiago
+                6   31200  46 Avda. Goya - C/ Baltasar Gracián 
+                7   30686  45 C/ Gran Vía - Facultad Económicas
+                8   28914  42 Avda. Tenor Fleta - C/ Uncastillo
+                9   27690 108 Plaza Emperador Carlos V
+               10   27490  49 Avda. Goya - Avda. Anselmo Clavé
+               11   27312  21 Avda. César Augusto - Avda. Conde Aranda
+               12   26862  11 Pº Echegaray y Caballero - Puente de La Almozara
+               13   26561  59 Plaza Mozart
+               14   25929   9 Pº Echegaray y Caballero - Puente de Piedra
+               15   25408  44 Pº Sagasta - Cno. de las Torres
+               16   24590  57 Pº de la Ribera - C/ Sobrarbe
+               17   24021   6 Pº de la Ribera - Puente del Pilar
+               18   23875  18 C/ Asalto - Edificio Trovador
+               19   23801  91 Plaza San Francisco - La Salle
+               20   23517  75 Avda. Salvador Allende - C/ Rubio de Francia
+               21   23311   5 Pº de la Ribera - Puente de Santiago
+               22   22884  87 Pº Mª Agustín - C/ de la Aljafería
+               23   22866  50 Avda. San Juan Bosco - C/ Menéndez Pelayo
+               24   22215  31 Avda. Pablo Gargallo - C/ Ignacio Menaya
+               25   21944 109 Pº Isabel la Católica - C/ Gonzalo Calamita
+               26   21898 119 Avda. Juan Carlos I - C/ Ramón Sainz de Varanda
+               27   21818 102 C/ Pedro Joaquín Soler - Coso
+               28   21190  37 C/ Florentino Ballesteros - C/ Matadero
+               29   21115  39 Cno. de las Torres - Avda. Cesáreo Alierta
+               30   21020  41 Plaza Schweitzer
+               31   21014  65 Avda. G. Gómez de Avellaneda - Intercambiador
+               32   20889  98 Glorieta Sasera - Pº Damas
+               33   19627   3 Pasarela del Voluntariado - Avda. Ranillas
+               34   19174  70 Avda. Mª Zambrano - C/ Ildefonso Manuel Gil
+               35   18846   8 Pº Echegaray y Caballero - Puente del Pilar
+               36   18688  51 Plaza Roma
+               37   18671  52 Avda. Duquesa Villahermosa - C/ Franco y López
+               38   18435  60 C/ Sangüesa Castañosa - C/ F. Oliván Bayle
+               39   18260  94 Avda. Mª Zambrano - C/ Padre Marcellán Mayayo
+               40   18098  43 Avda. Goya - C/ Arzobispo Domenech
+               41   17752 118 Avda. Juan Pablo II - Avda. Gómez Laguna
+               42   17670  99 Plaza de Santa Engracia
+               43   17651 130 C/ Corona de Aragón - C/ Lorente
+               44   17616  93 C/ Monasterio de Samos - C/ Monasterio de Poblet
+               45   17593 121 C/ Eduardo Ibarra - C/ Violante de Hungría
+               46   17485  30 Avda. Pablo Gargallo - Avda. Puerta Sancho
+               47   16997  38 Cno. de las Torres - C/ Roger de Tur
+               48   16930  19 C/ Asalto - C/ Miguel Servet 
+               49   16862  40 Avda. Cesáreo Alierta - C/ Félix Burriel
+               50   16499 101 C/ Doctor Iranzo -  C/ Escultor Benlliure
+               51   16405  12 Pasarela del Voluntariado - Avda. Almozara
+               52   16324  66 C/ Pablo Neruda - C/ Averroes
+               53   16308  24 Plaza San Pedro Nolasco
+               54   16305  36 Cno. de las Torres - C/ Silvestre Pérez
+               55   16172  68 Avda. Mª Zambrano - C/ Julio García Condoy
+               56   16063 123 Avda. San Juan Bosco - C/ La Milagrosa
+               57   15851  92 C/ San Juan de la Cruz - C/ Manuel Lasala
+               58   15700  56 C/ Balbino Orensanz - C/ Carmelo Betoré Bergua
+               59   15630  28 Plaza del Portillo - Plaza de Toros
+               60   15493  72 Avda. Mª Zambrano - C/ Pablo Iglesias
+               61   15428   4 Avda. Ranillas - Puente de La Almozara
+               62   15388  55 Avda. Marqués de la Cadena - C/ Miguel Asso
+               63   15050  54 Avda. Madrid - Pº Calanda
+               64   15029  15 Estación de Cercanías El Portillo 
+               65   14782   2 Avda. Ranillas - Avda. Pablo Ruiz Picasso
+               66   14651  27 Pº Mª Agustín - Colegio Joaquín Costa
+               67   14411  17 Pº Constitución - Plaza Aragón 
+               68   14061 110 Pº Isabel la Católica - Vía Hispanidad
+               69   14007 112 Vía Hispanidad - Avda. Sainz de Varanda
+               70   13215  29 Avda. Madrid - Aljafería
+               71   13182  33 Plaza del Pilar - Edificio Turismo 
+               72   13153  89 Pº Echegaray y Caballero - C/ Postigo del Ebro
+               73   13079  26 Pº Pamplona - Puerta del Carmen
+               74   12958  35 Pº Echegaray y Caballero - C/ Salvador Minguijón
+               75   12882  48 Plaza Mariano Arregui
+               76   12636  64 Avda. Valle de Broto - Avda. Pirineos
+               77   12416  95 Pº Longares - C/ Fuendejalón
+               78   12381  80 Avda. Academia Gral. Militar - Avda. Salvador Alle
+               79   12272  77 Avda. Salvador Allende - Avda. Pablo Ruiz Picasso
+               80   11977 128 C/ Bolivia - Pº Calanda
+               81   11875  23 Pº de La Ribera - Pasarela Azud
+               82   11873  58 Avda. Valle de Zuriza - Avda. Cataluña
+               83   11652  90 C/ Bretón - C/ San Antonio Mª Claret
+               84   11610 111 C/ Condes de Aragón - Vía Hispanidad
+               85   11472 122 Avda. Gómez Laguna nº 6
+               86   11449  74 Avda. Pablo Ruiz Picasso - C/ Pintor Luis Cernuda
+               87   11356  13 C/ Francia - Pabellón Puente
+               88   11105  61 C/ Sixto Celorrio - C/ Peña Oroel
+               89   10759  20 Plaza Salamero, 14
+               90   10726  25 Plaza de los Sitios 
+               91   10508 107 C/ Luis Vives - C/ Manuel Lasala
+               92   10178  86 Avda. Almozara - CDM Almozara
+               93   10004 103 C/ Lacarra de Miguel - C/ San Vicente Martir
+               94    9640  63 Avda. Valle de Broto - Parque Tío Jorge
+               95    9547  69 Avda. Pablo Ruiz Picasso - C/ Mújica Lainez 
+               96    9502  71 C/ Luis Legaz Lacambra - C/ Octavio Paz
+               97    9492  73 C/ Margarita Xirgu - Avda. G. Gómez de Avellaneda
+               98    9426 126 C/ Julián Sánz Ibáñez - C/ Rioja
+               99    9307 113 Vía Hispanidad - Avda. Gómez Laguna
+              100    9254 100 PLAZA DEL CARMEN
+              101    9200 125 Via Univérsitas - C/ Hermanos Gambra
+              102    9151  14 Estación Intermodal Delicias (Salidas)
+              103    8920 115 Vía Hispanidad - C/ Océano Atlántico
+              104    8778 124 Via Univérsitas - Avda. Duquesa Villahermosa
+              105    8690 129 C/ Graus - C/ Unceta
+              106    8689  53 Avda. Madrid - Avda. Navarra 
+              107    8376 120 C/ Asín y Palacios - C/ Pedro IV El Ceremonioso
+              108    8367  32 C/ Ramón y Cajal - C/ Madre Rafols
+              109    8328  88 Avda. Navarra - C/ Alagón
+              110    8083 106 C/ Arzobispo Morcillo - C/ Fernando de Antequera
+              111    8028  62 Avda. Marqués de la Cadena - Avda. San Juan de la 
+              112    8021 117 Avda. Duquesa Villahermosa - Avda. Juan Carlos I
+              113    8001  85 C/ Pablo Gargallo - C/ Jardines de Atenas
+              114    7953  97 Pº Constitución - C/ Mefisto
+              115    7951 114 Vía Hispanidad - Avda. Duquesa Villahermosa
+              116    7913   7 Pº Echegaray y Caballero - Pasarela del Huerva
+              117    7904 116 C/ Ciudadela - C/ Andrés Vicente
+              118    7626  76 Avda. San Juan de la Peña - C/ Juslibol
+              119    7504   1 Avda. Pablo Ruiz Picasso - Torre del Agua
+              120    7023  79 Avda. Salvador Allende - C/ Matías Pastor Sancho
+              121    6521 105 C/ Doctor Horno - C/ Madre Sacramento
+              122    6503 127 Avda. Navarra - C/ Rioja
+              123    6377  78 Avda. San Juan de la Peña - C/ Somport
+              124    6061  96 Pº de la Mina - C/ Pomarón
+              125    5898  22 Estación Intermodal Delicias (Llegadas)
+              126    5503 104 C/ Madre Rafols - Esquina D.G.A.
+              127    5224  81 Plaza Tauromaquia - Avda. Academia Gral. Militar
+              128    4019  84 Avda. Majas de Goya - C/ La Fragua
+              129    3625  82 C/ Los Leñadores - Avda. Academia Gral. Militar
+              130    3009  83 Avda. Majas de Goya - Eroski
