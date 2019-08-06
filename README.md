@@ -29,7 +29,7 @@ que el usuario elija una opción que esté disponible. Es importante tener en cu
 programa para poder ser utilizados deben alojarse en el directorio "Datos". Seguidamente se muestra una captura de la 
 retroalimentación del sistema
 
-![alt text](![alt text](https://i.ibb.co/pvHvL73/0.png) 
+![alt text](https://i.ibb.co/pvHvL73/0.png) 
 
 
 ### 2.2 - Menú de opciones disponibles
@@ -37,7 +37,8 @@ retroalimentación del sistema
 A continuación, el programa informará de cuáles son las órdenes que acepta, mostrando la información reflejada en la siguiente 
 imagen.
 
-IMAGEN
+![alt text](https://i.ibb.co/QXWDhJf/0.png)
+
 
 ### 2.3 - Órdenes de ejecución disponibles
 
@@ -53,7 +54,7 @@ en qué consisten las distintas órdenes.
 Cuando el usuario introduce por teclado esta orden el programa muestra el menú con las opciones posibles que se pueden realizar
 tal y como se ha explicado en el apartado 2.2
 
-IMAGEN
+![alt text](https://i.ibb.co/wSTYRck/1.png)
 
 ### 2.5 - Orden FICHERO
 
@@ -193,6 +194,7 @@ funcionamiento.
 ### 9 - Documentación
 
 Los ficheros del portal de datos abiertos del ayuntamiento de Zaragoza han sido extraídos de la URL mostrada a continuación.
+URL del portal: https://www.zaragoza.es/sede/portal/datos-abiertos/servicio/catalogo/70#CSV
 
 
 
