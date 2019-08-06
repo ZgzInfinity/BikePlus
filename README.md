@@ -3,7 +3,7 @@
 Proyecto que gestiona datos relativos a estaciones, usos y usuarios del sistema Bizi obtenidos del portal de datos abiertos
 del Ayuntamiento de Zaragoza.
 
-![alt text](https://i.ibb.co/kKZ5SCm/ndice.jpg) 
+![alt text](https://i.ibb.co/bzbBPsX/chulo.jpg) 
 
 ## 1 - Descripción 
 
