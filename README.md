@@ -21,15 +21,18 @@ trabajar inicialmente. Dichos ficheros de texto con los datos han sido obtenidos
 de Zaragoza. El programa mostrará cuales son las opciones de ficheros disponibles y el usuario deberá seleccionar la que él 
 quiera. 
 
-El programa ofrecerá las opciones disponibles y solicitará una. Cuando el usuario introduzca su respuesta, el programa comprueba 
+El programa ofrece las opciones disponibles y solicita una. Cuando el usuario introduce su respuesta, el programa comprueba 
 si existe el fichero correspondiente de usos e informa del número de usos que contiene. Seguidamente, comprueba que existe el 
 de usuarios e informa de cuántos usuarios contiene. Si el usuario introduce una opción para la que no hay ficheros, notifica
 de que el fichero correspondiente no existe, y vuelve a informar sobre las opciones disponibles y a solicitar una nueva hasta 
 que el usuario elija una opción que esté disponible. Es importante tener en cuenta que los ficheros con los que trabaja el 
 programa para poder ser utilizados deben alojarse en el directorio "Datos". Seguidamente se muestra una captura de la 
-retroalimentación del sistema
+retroalimentación del sistema cuando el usuario introduce un fichero disponible y otra cuando no, respectivamente.
 
 ![alt text](https://i.ibb.co/pvHvL73/0.png) 
+
+
+![alt text](https://i.ibb.co/DGMCcBr/0.png)
 
 
 ### 2.2 - Menú de opciones disponibles
@@ -147,7 +150,7 @@ rodeados por comillas. Seguidamente se muestra una imagen para reflejar la sinta
 ![alt text](https://i.ibb.co/6bMqNJP/6.png) 
 
 
-### 5 - Entornos de programación y desarrollo
+## 5 - Entornos de programación y desarrollo
 
 BikePlus es un programa que ha sido desarrollado y preparado para poder ser ejecutado en sistemas operativos Linux y en sistemas
 operativos de la familia de Windows. Para la programación de la versión de BikePlus para Windows se ha empleado el entorno de 
@@ -155,9 +158,9 @@ programación Codelite cuya versión es la 12.0 y el compilador MINGW para Windo
 de BikePlus en Linux se ha usado el editor de textos Atom.
 
 
-### 6 - Compilación  y ejecución del proyecto
+## 6 - Compilación  y ejecución del proyecto
 
-## 6.1 - Windows 
+### 6.1 - Windows 
 
 Para llevar a cabo la compilación y ejecución en Windows se ha proporcionado una carpeta denominada "Windows" en cuyo interior
 se encuentra una carpeta llamada "BikePlus" correspondiente al proyecto desarrollado en Codelite. Para poder ejecutarlo basta 
@@ -165,7 +168,7 @@ crear un workspace, importar el proyecto y darle a la opción "Build and run pro
 
 ![alt text](https://i.ibb.co/K0FYJK8/8.png) 
 
-## 6.2 - Linux
+### 6.2 - Linux
 
 Para efectiar la compilación y ejecución del proyecto BikePlus se ha proporcioando una carpeta llamada "Linux" que contiene
 una carpeta denominada "BikePlus" donde se encuentran los fichers del programa. Para poder compilar se debe hacer uso de un 
@@ -178,20 +181,20 @@ compilar y ejecutar en Linux.
 ![alt text](https://i.ibb.co/SrMBkp6/11.jpg)
 
 
-### 7 - Pruebas
+## 7 - Pruebas
 
 BikePLus ha sido probado en computadores con los sistemas operativos Windows 7, Windows 10, Ubuntu 17.10, Ubuntu 18.4 y 
 Debian 9.4, aunque éste último es una máquina virtual corrida con Virtualbox, versión 5.2.14 r123301 (Qt5.6.2).
 
 
-### 8 - Release 
+## 8 - Release 
 
 Se ha proporcionado un archio .exe para poder ejecutar el programa BikePlus en Windows junto con otro archivo ejecutable para 
 poder ejecutar en Linux. Adicionalmente se facilita la capeta "Datos" con unos cuántos ficheros de prueba para poder porbar su
 funcionamiento.
 
 
-### 9 - Documentación
+## 9 - Documentación
 
 Los ficheros del portal de datos abiertos del ayuntamiento de Zaragoza han sido extraídos de la URL mostrada a continuación.
 
