@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Gord
-Date                   :=06/08/2019
+Date                   :=07/08/2019
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
 SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/TDM-GCC-64/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/BikePlus_BikePlus.cpp$(ObjectSuffix) $(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(ObjectSuffix) $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/BikePlus_BikePlus.cpp$(ObjectSuffix) $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(ObjectSuffix) $(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) 
 
 
 
@@ -101,13 +101,13 @@ $(IntermediateDirectory)/BikePlus_BikePlus.cpp$(DependSuffix): BikePlus/BikePlus
 $(IntermediateDirectory)/BikePlus_BikePlus.cpp$(PreprocessSuffix): BikePlus/BikePlus.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/BikePlus_BikePlus.cpp$(PreprocessSuffix) BikePlus/BikePlus.cpp
 
-$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix): Uso/Bizi-uso.cc $(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Gord/Desktop/Prueba/BikePlus/Uso/Bizi-uso.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix): Uso/Bizi-uso.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix) -MM Uso/Bizi-uso.cc
+$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix): Usuario/Bizi-usuario.cc $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Gord/Desktop/Prueba/BikePlus/Usuario/Bizi-usuario.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix): Usuario/Bizi-usuario.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix) -MM Usuario/Bizi-usuario.cc
 
-$(IntermediateDirectory)/Uso_Bizi-uso.cc$(PreprocessSuffix): Uso/Bizi-uso.cc
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Uso_Bizi-uso.cc$(PreprocessSuffix) Uso/Bizi-uso.cc
+$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(PreprocessSuffix): Usuario/Bizi-usuario.cc
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(PreprocessSuffix) Usuario/Bizi-usuario.cc
 
 $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(ObjectSuffix): Estacion/Bizi-estacion.cc $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(DependSuffix)
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Gord/Desktop/Prueba/BikePlus/Estacion/Bizi-estacion.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(ObjectSuffix) $(IncludePath)
@@ -117,13 +117,13 @@ $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(DependSuffix): Estacion/Bizi
 $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(PreprocessSuffix): Estacion/Bizi-estacion.cc
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Estacion_Bizi-estacion.cc$(PreprocessSuffix) Estacion/Bizi-estacion.cc
 
-$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix): Usuario/Bizi-usuario.cc $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Gord/Desktop/Prueba/BikePlus/Usuario/Bizi-usuario.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix): Usuario/Bizi-usuario.cc
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(DependSuffix) -MM Usuario/Bizi-usuario.cc
+$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix): Uso/Bizi-uso.cc $(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Gord/Desktop/Prueba/BikePlus/Uso/Bizi-uso.cc" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix): Uso/Bizi-uso.cc
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Uso_Bizi-uso.cc$(ObjectSuffix) -MF$(IntermediateDirectory)/Uso_Bizi-uso.cc$(DependSuffix) -MM Uso/Bizi-uso.cc
 
-$(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(PreprocessSuffix): Usuario/Bizi-usuario.cc
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Usuario_Bizi-usuario.cc$(PreprocessSuffix) Usuario/Bizi-usuario.cc
+$(IntermediateDirectory)/Uso_Bizi-uso.cc$(PreprocessSuffix): Uso/Bizi-uso.cc
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Uso_Bizi-uso.cc$(PreprocessSuffix) Uso/Bizi-uso.cc
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

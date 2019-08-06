@@ -352,12 +352,26 @@ void ordenarPorUso(Estacion estaciones[]){
  *
  */
 void mostrarMenuInforme (ofstream& f){
+	// Mostrar cabecera del informe en el fichero
+	cout << endl << endl;
 	f << setw(17) << "Puesto"  
 		  << setw(8) <<  "Usos" 
 		  << setw(4) << "id" 
 		  << setw(7) << "Nombre" 
 		  << endl;
 		f << setw(11) << ' ' 
+		  << setw(6) << setfill('-') << "" << " "  
+		  << setw(7) << setfill('-') << "" << " "
+		  << setw(3) << setfill('-') << "" << " "
+		  << setw(40) << setfill('-') << " " << endl;
+
+	// Mostrar cabecera del informe en la pantalla
+	cout << setw(17) << "Puesto"  
+		  << setw(8) <<  "Usos" 
+		  << setw(4) << "id" 
+		  << setw(7) << "Nombre" 
+		  << endl;
+		cout << setw(11) << ' ' 
 		  << setw(6) << setfill('-') << "" << " "  
 		  << setw(7) << setfill('-') << "" << " "
 		  << setw(3) << setfill('-') << "" << " "
@@ -401,8 +415,13 @@ bool escribirInforme(const char nombreFichero[], const Estacion estaciones[]){
 			codigoEstacion = obtenerCodigoEstacion(estaciones[i]);
 			numUsos = obtenerUsosEstacion(estaciones[i]);
 			obtenerNombreEstacion(estaciones[i], nombreEstacion);
-			// escritura de los datos obtenidos de la estación en el informe
+			// escritura de los datos obtenidos de cada estación en el informe
 			f << setw(17) << setfill(' ') << i + 1 
+			  << setw(8) << setfill(' ') << numUsos 
+			  << setw(4) << setfill(' ') << codigoEstacion 
+			  << " " << nombreEstacion << endl; 
+			// muestreo de los datos por pantalla de cada estacion en el informe
+			cout << setw(17) << setfill(' ') << i + 1 
 			  << setw(8) << setfill(' ') << numUsos 
 			  << setw(4) << setfill(' ') << codigoEstacion 
 			  << " " << nombreEstacion << endl; 
