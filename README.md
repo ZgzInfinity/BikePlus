@@ -75,7 +75,7 @@ imagen inferior muestra todo lo explicado anteriormente.
 
 ![alt text](https://i.ibb.co/Ht4CKPn/3.png)
 
-![alt text](https://i.ibb.co/Ht4CKPn/3.png)
+![alt text](https://i.ibb.co/WnN7PG0/1.png)
 
 ### 2.7 - Orden USUARIO
 
@@ -101,7 +101,7 @@ se muestra una imagen de la salida del sistema cuando el usaurio teclea una orde
 ![alt text](https://i.ibb.co/N9YgyPM/0.png)
 
 
-## 3. - Control de órdenes no válidas
+## 3 - Control de órdenes no válidas
 
 Cuando el usuario seleccione una órden no disponible, deberá informar sobre el error y solicitar unanueva orden. La imagen 
 siguiente muestra la retralimentación del programa.
@@ -194,6 +194,7 @@ funcionamiento.
 ### 9 - Documentación
 
 Los ficheros del portal de datos abiertos del ayuntamiento de Zaragoza han sido extraídos de la URL mostrada a continuación.
+
 URL del portal: https://www.zaragoza.es/sede/portal/datos-abiertos/servicio/catalogo/70#CSV
 
 
