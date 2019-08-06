@@ -1,9 +1,9 @@
 # BikePlus
 
-LOGO 
-
 Proyecto que gestiona datos relativos a estaciones, usos y usuarios del sistema Bizi obtenidos del portal de datos abiertos
 del Ayuntamiento de Zaragoza.
+
+![alt text](https://i.ibb.co/8mBf6Rx/bizi-LOGO.jpg) 
 
 ## 1 - Descripción 
 
@@ -21,7 +21,7 @@ inicialmente. Dichos ficheros de texto con los datos han sido obtenidos del port
 El programa mostrará cuales son las opciones de ficheros disponibles y el usuario deberá seleccionar la que él quiera. 
 A continuación, se muestra una captura de dicha interacción.
 
-IMAGEN
+![alt text](https://i.ibb.co/8mBf6Rx/bizi-LOGO.jpg) 
 
 El programa ofrecerá las opciones disponibles y solicitará una. Cuando el usuario introduzca su respuesta, el programa comprueba 
 si existe el fichero correspondiente de usos e informa del número de usos que contiene. Seguidamente, comprueba que existe el 
@@ -49,14 +49,14 @@ hasta que el usuario escriba la orden «FIN», en cuyo caso el programa termina.
 escriba la orden en mayúsculas, minúsculas o cualquier combinaciónde ambas. Se describen a continuación con más detalles 
 en qué consisten las distintas órdenes.
 
-### 2.4 - Orden <<AYUDA>>
+### 2.4 - Orden AYUDA
 
 Cuando el usuario introduce por teclado esta orden el programa muestra el menú con las opciones posibles que se pueden realizar
 tal y como se ha explicado en el apartado 2.2
 
 IMAGEN
 
-### 2.5 - Orden <<FICHERO>>
+### 2.5 - Orden FICHER>
 
 La orden «FICHERO» permite modificar la selección de ficheros con los que se está trabajando, y que fueron introducidos al 
 comienzo de la ejecución del programa. El programa se comportará como se especificó en la sección 2.1. La orden no se completa 
@@ -64,7 +64,7 @@ hasta que el usuario selecciona una opción correcta.
 
 IMAGEN
 
-### 2.6 - Orden <<INFORME>>
+### 2.6 - Orden INFORME
 
 Cuando el usuario escribe esta opción, debe proporcionar como argumento el nombre del fichero en el que se va a escribir la 
 información acerca de las estaciones Bizi más usadas de acuerdo con el fichero de usos que se encuentre seleccionado en ese 
@@ -75,7 +75,7 @@ imagen inferior muestra todo lo explicado anteriormente.
 
 IMAGEN 
 
-### 2.7 - Orden <<USUARIO>>
+### 2.7 - Orden USUARIO
 
 Cuando el usuario escribe esta opción, debe proporcionar como argumento el identificador de un usuario del sistema Bizi. 
 El programa informará acerca del número de utilizaciones del sistema que dicho usuario haya realizado de acuerdo con el 
@@ -83,7 +83,7 @@ fichero de usos seleccionado actualmente. Seguidamente se plasma una captura par
 
 IMAGEN 
 
-### 2.8 - Orden <<ESTADISTICAS>>
+### 2.8 - Orden ESTADISTICAS
 
 En caso de que el usuario escribe esta opción, el programa informa del número de utilizaciones del sistemaque han realizado 
 hombres y mujeres de acuerdo con el fichero de usos seleccionado actualmente. La captura siguiente refleja como retorna el
@@ -91,7 +91,7 @@ sistema los resultados al usuario.
 
 IMAGEN
 
-### 2.9. - Orden <<FIN>>
+### 2.9. - Orden <FIN>
 
 Si el usuario selecciona esta opción, el programa termina (y, por lo tanto, no vuelve a solicitarmás órdenes).
 
@@ -139,8 +139,7 @@ su identificador numérico (que figura al final de la primera URL decada línea)
 cada línea del fichero). Nótese como tanto la URL donde figura el identificador numérico como el nombre de la estación están 
 rodeados por comillas. Seguidamente se muestra una imagen para reflejar la sintaxis del fichero.
 
-
-IMAGEN
+![alt text](https://i.ibb.co/6bMqNJP/6.png) 
 
 
 ### 5 - Entornos de programación y desarrollo
@@ -159,14 +158,17 @@ Para llevar a cabo la compilación y ejecución en Windows se ha proporcionado u
 se encuentra una carpeta llamada "BikePlus" correspondiente al proyecto desarrollado en Codelite. Para poder ejecutarlo basta 
 crear un workspace, importar el proyecto y darle a la opción "Build and run project" tal y como muestra la siguiente imagen.
 
-IMAGEN
+![alt text](https://i.ibb.co/K0FYJK8/8.png) 
 
 ## 6.2 - Linux
 
 Para efectiar la compilación y ejecución del proyecto BikePlus se ha proporcioando una carpeta llamada "Linux" que contiene
 una carpeta denominada "BikePlus" donde se encuentran los fichers del programa. Para poder compilar se debe hacer uso de un 
 fichero Makefile. En el intérprete de comandos se deben introducir las órdenes make clean y make, generando un ejecutable en
-el directorio "BikePlus". Para poder ejecutar el programa basta con teclear "./BikePlus.
+el directorio "BikePlus". Para poder ejecutar el programa basta con teclear "./BikePlus. Las siguientes imagenes muestran como
+compilar y ejecutar en Linux.
+
+![alt text](https://i.ibb.co/0KRq9fv/10.jpg) 
 
 
 ### 7 - Pruebas
