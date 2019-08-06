@@ -56,13 +56,13 @@ tal y como se ha explicado en el apartado 2.2
 
 IMAGEN
 
-### 2.5 - Orden FICHER>
+### 2.5 - Orden FICHERO
 
 La orden «FICHERO» permite modificar la selección de ficheros con los que se está trabajando, y que fueron introducidos al 
 comienzo de la ejecución del programa. El programa se comportará como se especificó en la sección 2.1. La orden no se completa 
 hasta que el usuario selecciona una opción correcta.
 
-IMAGEN
+![alt text](https://i.ibb.co/nRy7t5L/0.png)
 
 ### 2.6 - Orden INFORME
 
@@ -73,7 +73,9 @@ correspondiente al informe, de forma que muestre las ocho estaciones más utiliz
 muestra por la pantalla las estaciones más usadas sino que crea un fichero en la carpeta "Datos" con dicho contenido. La 
 imagen inferior muestra todo lo explicado anteriormente.
 
-IMAGEN 
+![alt text](https://i.ibb.co/Ht4CKPn/3.png)
+
+![alt text](https://i.ibb.co/Ht4CKPn/3.png)
 
 ### 2.7 - Orden USUARIO
 
@@ -81,7 +83,7 @@ Cuando el usuario escribe esta opción, debe proporcionar como argumento el iden
 El programa informará acerca del número de utilizaciones del sistema que dicho usuario haya realizado de acuerdo con el 
 fichero de usos seleccionado actualmente. Seguidamente se plasma una captura para reseñar el comportamiento del programa.
 
-IMAGEN 
+![alt text](https://i.ibb.co/Ht4CKPn/3.png) 
 
 ### 2.8 - Orden ESTADISTICAS
 
@@ -89,11 +91,14 @@ En caso de que el usuario escribe esta opción, el programa informa del número 
 hombres y mujeres de acuerdo con el fichero de usos seleccionado actualmente. La captura siguiente refleja como retorna el
 sistema los resultados al usuario.
 
-IMAGEN
+![alt text](https://i.ibb.co/mNyJw4W/2.png)
 
 ### 2.9. - Orden <FIN>
 
-Si el usuario selecciona esta opción, el programa termina (y, por lo tanto, no vuelve a solicitarmás órdenes).
+Si el usuario selecciona esta opción, el programa termina (y, por lo tanto, no vuelve a solicitarmás órdenes). A continuación,
+se muestra una imagen de la salida del sistema cuando el usaurio teclea una orden incorrecta.
+
+IMAGEN
 
 
 ## 3. - Control de órdenes no válidas
@@ -118,7 +123,7 @@ identificador, su sexo (masculino —‘M’— o femenino —‘F’—) y sobr
 información relativa al rango de edad al que pertenece cada usuario. La siguiente captura muestra un ejemplo de la apariencia
 del fichero.
 
-IMAGEN
+![alt text](https://i.ibb.co/QPsBg6K/7.png)
 
 ### 4.2 - Fichero de usos
 
@@ -169,6 +174,8 @@ el directorio "BikePlus". Para poder ejecutar el programa basta con teclear "./B
 compilar y ejecutar en Linux.
 
 ![alt text](https://i.ibb.co/0KRq9fv/10.jpg) 
+
+![alt text](https://i.ibb.co/SrMBkp6/11.jpg)
 
 
 ### 7 - Pruebas
